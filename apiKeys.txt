@@ -1,0 +1,33 @@
+Autenticacion: Es la parte que verifica y identifica que el usuario sea el mismo
+                Como cuando gmail te pide que revises tu correo cuando creas una 
+                cuenta nueva
+
+Autorizacion: Es la parte que da permisos a un usuario, asigna lo que tiene
+                permitido o no.
+
+
+API KEY
+Es basicamente una de las formas en las que el backend puede saber que quien es quien
+Que es lo que tiene o no tiene permitido hacer en la aplicacion
+
+Una api key se puede pasar como query parameter
+QUERY PARAMETER: ...?api_key=API_KEY123 
+
+o como un header
+AUTHORIZATION HEADER: X-API-Key: API_KEY123
+
+
+otras alternativas a una api key son
+Authorization: Basic 
+Authorization: Bearer Token
+OAuth 2.0 (Esta dice el maestro que es la mejor y la mas complicada)
+Access Key + Secret Key (Criptografia fijo)
+
+Application-based authentication (Ahorita voy a aprender de esta)
+    Creo que esta es para autenticar solo la aplicacion para dar informacion 
+    general a todos los usuarios
+
+
+User-based authentication (esta despues)
+    Y esta es para mostrar informacion privada y especifica a cada uno de los 
+    usuarios que usan la app.

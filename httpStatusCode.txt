@@ -1,0 +1,15 @@
+Estos codigos sirven para que nuestra solicitud HTTP
+nos diga que estado tiene, si fue aceptado, redirigido,
+si hubo un error o parecido
+
+HTTP status codes
+
+1XX Respuestas Afirmativas
+2XX Respuestas satisfactorias
+3XX Re-direcciones
+4XX Error del cliente
+5XX Error de servidor
+
+Los mas comunes son
+200 que es OK con la peticion
+404 que no se encontro lo que se buscaba
