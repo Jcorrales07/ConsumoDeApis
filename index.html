@@ -13,13 +13,37 @@
 <body>
 
     <div class="container">
-        <h1>Gatitos aleatorios</h1>
-        <img alt="Foto gatito aleatorio" width="250px" id="img1">
-        <img alt="Foto gatito aleatorio" width="250px" id="img2">
-        <img alt="Foto gatito aleatorio" width="250px" id="img3">
-        <button class="nextPhotoBtn">Siguiente gatito</button>
-        <!-- El maestro lo hizo de esta manera, sin acceder al DOM -->
-        <!-- <button onClick="function()">Siguiente gatito</button> -->
+        
+        <div class="randomMichis">
+            <h1>Michis App</h1>
+            <div class="randomPhotoMichis">
+                <article>
+                    <img alt="Foto gatito aleatorio" width="250px" id="img1">
+                    <button>Guardar en favoritos</button>
+                </article>
+        
+                <article>
+                    <img alt="Foto gatito aleatorio" width="250px" id="img2">
+                    <button>Guardar en favoritos</button>
+                </article>
+        
+                <article>
+                    <img alt="Foto gatito aleatorio" width="250px" id="img3">
+                    <button>Guardar en favoritos</button>
+                </article>
+            </div>
+            
+            <button class="nextPhotoBtn" id="nextPhotoBtn">Siguiente gatito</button>
+        </div>
+       
+        <section class="favoritesMichis" id="favoritesMichis">
+            <h1>Favoritos</h1>
+
+            <article>
+                <img alt="Foto gatito aleatorio" width="250px" id="img1">
+                <button>Sacar de favoritos</button>
+            </article>
+        </section>
     </div>
 
 </body>

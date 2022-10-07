@@ -1,4 +1,8 @@
-const API = 'https://api.thecatapi.com/v1/images/search?limit=3'
+const API = 'https://api.thecatapi.com/v1/images/search'
+const queryParameter = '?limit=3'
+const API_KEY = 'live_TYj5SIoubXBpSyW2Ax1ftQetdUJcN72RyJJswjHvWOVnPHQ06oj7h61L5SjWUUgI'
+const queryApiKeyParameter = `?api_key=${API_KEY}`
+const API_FAVORITES = `https://api.thecatapi.com/v1/favourites${queryApiKeyParameter}`
 
 // Los ENDPOINTS son las rutas que tiene una api para dar contenido especifico
 // Ejemplo
@@ -18,11 +22,12 @@ const API = 'https://api.thecatapi.com/v1/images/search?limit=3'
 // format y search son tipos de filtros y son los que se tienen
 // que checkear en la api para ver cuales aceptan
 // Twitter acepta uno de text
+// ========= Para poder poner otro query parameter se usar el &
 
 const img1 = document.getElementById('img1')
 const img2 = document.getElementById('img2')
 const img3 = document.getElementById('img3')
-const button = document.querySelector('button')
+const button = document.getElementById('nextPhotoBtn')
 
 
 // Yo lo hice asi
@@ -34,7 +39,7 @@ async function fetchData(apiUrl) {
 }
 
 const getResults = () => {
-    const results = fetchData(API)
+    const results = fetchData(`${API}${queryParameter}&${queryApiKeyParameter}`)
 
     results.then(data => {
         console.log(data)
@@ -43,6 +48,13 @@ const getResults = () => {
         img3.src = data[2].url
     })
 }
+
+
+async function getFavoriteMichis() {
+    const results = await fetchData(API_FAVORITES)
+    console.log('results', results)
+}
+getFavoriteMichis()
 // ============================
 
 // el maestro lo hizo asi
@@ -56,7 +68,4 @@ async function reload() {
 
 button.addEventListener('click', getResults)
 getResults()
-
-
-
  

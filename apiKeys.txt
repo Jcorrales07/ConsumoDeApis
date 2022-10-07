@@ -6,7 +6,7 @@ Autorizacion: Es la parte que da permisos a un usuario, asigna lo que tiene
                 permitido o no.
 
 
-API KEY
+API KEY // LA Api Key nunca se muestra ni se comparte!!!!!!!!!!!
 Es basicamente una de las formas en las que el backend puede saber que quien es quien
 Que es lo que tiene o no tiene permitido hacer en la aplicacion
 

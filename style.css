@@ -20,7 +20,6 @@ body {
     background-color: rgb(254, 230, 193);
     box-shadow: 0px 0px 60px 0px rgb(116, 87, 44);
     display: flex;
-    flex-direction: column;
     justify-content: center;
     text-align: center;
     padding: 20px;
@@ -30,6 +29,7 @@ body {
 .container h1 {
     margin-bottom: 2rem;
     color: rgb(116, 87, 44);
+    font-size: 2rem;
 }
 
 .container img {
@@ -56,4 +56,45 @@ body {
 .container button:active {
     background-color: rgb(255, 255, 255);
     border: 2px solid rgb(116, 87, 44);
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+.container button .nextPhotoBtn {
+    background-color: rgb(116, 87, 44);
+    color: rgb(255, 255, 255);
+}
+
+.nextPhotoBtn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(116, 87, 44);
+    box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
+}
+
+.randomPhotoMichis {
+    height: 700px;
+    overflow: scroll;
+}
+
+.randomPhotoMichis::-webkit-scrollbar {
+    width: 1rem;
+    margin: 0.5rem;
+}
+
+.randomPhotoMichis::-webkit-scrollbar-track {
+    background: rgb(185, 155, 110);
+}
+
+.randomPhotoMichis::-webkit-scrollbar-thumb {
+    background: rgb(116, 87, 44);
+    border-radius: 5px;
+}
+
+.favoritesMichis {
+    display: none;
+    margin-left: 2rem;
 }
