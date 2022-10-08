@@ -61,7 +61,7 @@ body {
 article {
     display: flex;
     flex-direction: column;
-    margin: 2rem 0;
+    margin: 2rem;
 }
 
 .container button .nextPhotoBtn {
@@ -77,24 +77,32 @@ article {
 
 .randomPhotoMichis {
     height: 700px;
-    overflow: scroll;
+    margin-bottom: 2rem;
 }
 
-.randomPhotoMichis::-webkit-scrollbar {
-    width: 1rem;
+
+.favoritesPhotoMichis {
+    display: none;
+    margin-left: 2rem;
+}
+
+.photoContainers {
+    height: 700px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.photoContainers::-webkit-scrollbar {
+    width: 0.8rem;
     margin: 0.5rem;
 }
 
-.randomPhotoMichis::-webkit-scrollbar-track {
+.photoContainers::-webkit-scrollbar-track {
     background: rgb(185, 155, 110);
-}
-
-.randomPhotoMichis::-webkit-scrollbar-thumb {
-    background: rgb(116, 87, 44);
     border-radius: 5px;
 }
 
-.favoritesMichis {
-    display: none;
-    margin-left: 2rem;
+.photoContainers::-webkit-scrollbar-thumb {
+    background: rgb(116, 87, 44);
+    border-radius: 5px;
 }
