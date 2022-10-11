@@ -106,3 +106,19 @@ article {
     background: rgb(116, 87, 44);
     border-radius: 5px;
 }
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputFile {
+    margin-bottom: 2rem;
+}
