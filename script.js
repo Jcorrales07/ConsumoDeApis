@@ -1,6 +1,5 @@
 const API_RANDOM = 'https://api.thecatapi.com/v1/images/search?limit=10';
-const API_KEY =
-    'live_TYj5SIoubXBpSyW2Ax1ftQetdUJcN72RyJJswjHvWOVnPHQ06oj7h61L5SjWUUgI';
+const API_KEY = 'live_TYj5SIoubXBpSyW2Ax1ftQetdUJcN72RyJJswjHvWOVnPHQ06oj7h61L5SjWUUgI';
 const queryApiKeyParameter = `?api_key=${API_KEY}`;
 const API_FAVORITES = `https://api.thecatapi.com/v1/favourites`;
 const API_DELETE = (id) => `https://api.thecatapi.com/v1/favourites/${id}`;
